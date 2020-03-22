@@ -16,6 +16,14 @@
 	</properties>
 
 	<build>
+
+		<resources>
+			<resource>
+				<directory>D:\Udemy_Selenium\Banking_Project\logmechanism\</directory>
+				<filtering>true</filtering>
+
+			</resource>
+		</resources>
 		<plugins>
 
 			<plugin>
