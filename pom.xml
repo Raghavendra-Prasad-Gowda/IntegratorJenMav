@@ -19,7 +19,7 @@
 
 		<resources>
 			<resource>
-				<directory>D:\Udemy_Selenium\Banking_Project\logmechanism\</directory>
+				<directory>C:\Users\Ramprakash\git\IntegratorJenMav\LogTest\</directory>
 				<filtering>true</filtering>
 
 			</resource>
