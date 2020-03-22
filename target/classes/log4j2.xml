@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+
+
+
+		<RollingFile name="TestLogging"
+			fileName="C:\Users\Ramprakash\git\IntegratorJenMav\LogDisplay\TR.log"
+			filePattern="C:\Users\Ramprakash\git\IntegratorJenMav\LogDisplay\prints-%d(yyyy-MM-dd).log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+
+			<SizeBasedTriggeringPolicy size="100 MB" />
+		</RollingFile>
+
+
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %d(yyyy-MM-dd) [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+
+	</Appenders>
+
+
+	<Loggers>
+		<Logger name="Jenkins_Tester.JTesting.Jen" level="trace"
+			additivity="false">
+
+			<AppenderRef ref="TestLogging" />
+		</Logger>
+
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+		</Root>
+		
+	</Loggers>
+</Configuration>
