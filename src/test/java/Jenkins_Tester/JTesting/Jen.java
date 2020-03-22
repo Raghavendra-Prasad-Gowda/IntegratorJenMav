@@ -17,7 +17,8 @@ public class Jen {
 	@Test
 	public static void Tes() {
 		System.out.println("**************************Testing to Check Maven and Jenkins Integration*************************************");
-	    ls.info("Test Verified");
+	    System.out.println("Raghu");
+		ls.info("Test Verified");
 	
 	}
 
